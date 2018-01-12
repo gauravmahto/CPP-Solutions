@@ -37,4 +37,7 @@
 # Build folders
 x64/*
 Debug/*
+Release/*
 **/Debug/**
+**/Release/**
+**/x64/**
