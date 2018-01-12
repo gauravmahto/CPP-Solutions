@@ -8,6 +8,7 @@ EDB Note:
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <iostream>
 
 #ifdef _MSC_VER
 #include <intrin.h> /* for rdtscp and clflush */
@@ -130,6 +131,9 @@ int main(int argc, const char **argv) {
             printf("(second best: 0x%02X score=%d)", value[1], score[1]);
         printf("\n");
     }
+
+    // Wait for input and ignore.
+    std::cin.ignore();
 
     return (0);
 }
