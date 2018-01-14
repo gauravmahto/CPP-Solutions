@@ -12,12 +12,19 @@ ParseArgs::ParseArgs(const ParseArgs&&)
     cout << "Move constructor" << endl;
 }
 
+startcpp::ParseArgs::ParseArgs(const initializer_list<ParseArgs>& parseArgsObj)
+{
+    cout << R"(Initializer list constructor)" << endl;
+}
+
 ParseArgs::ParseArgs(int argc, wchar_t* argv[], wstring prefix /* = L"--" */)
 {
     if (argc > 1)
     {
         for (int index = 1; index < argc; ++index)
         {
+            original_args.push_back(argv[index]);
+
             const wchar_t* const arg = argv[index];
             wstring w_arg { arg };
 

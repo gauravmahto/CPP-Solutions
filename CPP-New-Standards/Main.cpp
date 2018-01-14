@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int wmain(int argc, wchar_t* argv[], wchar_t** envp[])
+int wmain(int argc, wchar_t* argv[], wchar_t* envp[])
 {
     startcpp::ParseArgs args { argc, argv };	// C++11 only. Equivalent to: ParseArgs args(argc, argv);
     // Scan for arguments.
