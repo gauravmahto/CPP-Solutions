@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018 - Author gauravm.git@gmail.com
+ */
+
 #pragma once
 
 #ifndef PARSE_ARGS_H
@@ -7,31 +11,30 @@
 
 namespace startcpp
 {
-    using namespace std;
 
-    class ParseArgs
-    {
-    public:
-        ParseArgs(int, wchar_t*[], wstring prefix = L"--");
+	class ParseArgs
+	{
+	public:
+		ParseArgs(int, wchar_t*[], std::wstring prefix = L"--");
 
-        // Copy constructor.
-        ParseArgs(const ParseArgs&);
+		// Copy constructor.
+		ParseArgs(const ParseArgs&);
 
-        // Move constructor.
-        ParseArgs(const ParseArgs&&);
+		// Move constructor.
+		ParseArgs(const ParseArgs&&);
 
-        // Initializer list.
-        ParseArgs(const initializer_list<ParseArgs>&);
+		// Initializer list.
+		ParseArgs(const std::initializer_list<ParseArgs>&);
 
-        bool HasArgument(wstring, map<wstring, wstring>::const_iterator) const;
+		bool HasArgument(std::wstring, std::map<std::wstring, std::wstring>::const_iterator) const;
 
-        map<wstring, wstring> GetParsedArguments() const;
+		std::map<std::wstring, std::wstring> GetParsedArguments() const;
 
-    private:
-        map<wstring, wstring> parsed_key_val_args_;
+	private:
+		std::map<std::wstring, std::wstring> parsed_key_val_args_;
 
-        vector<wstring> original_args;
-    };
+		std::vector<std::wstring> original_args;
+	};
 }
 
 #endif

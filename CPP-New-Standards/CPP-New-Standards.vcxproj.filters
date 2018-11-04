@@ -32,5 +32,11 @@
     <ClInclude Include="ParseArgs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Lambda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VariadicTempl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
