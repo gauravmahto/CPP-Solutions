@@ -24,6 +24,12 @@
     <ClCompile Include="ParseArgs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CodilityBinatyGap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodilityCyclicRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -36,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="VariadicTempl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Codility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

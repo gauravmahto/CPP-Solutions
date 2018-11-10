@@ -7,6 +7,8 @@
 #include "ParseArgs.h"
 #include "VariadicTempl.h"
 
+#include "Codility.h"
+
 using namespace std;
 
 int wmain(int argc, wchar_t* argv[], wchar_t* envp[])
@@ -17,7 +19,7 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[])
 	{
 		for (auto const arg : args.GetParsedArguments())
 		{
-			wcout << arg.first << " - " << arg.second << endl;
+			wcout << arg.first << " - " << arg.second << '\n';
 		}
 	}
 
@@ -29,8 +31,17 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[])
 
 	for (auto& str: stringVec)
 	{
-		wcout << str << endl;
+		wcout << str << '\n';
 	}
+
+	wcout << "BinaryGap = " << codility::BinaryGap::GetBinaryGap(1376796946) << '\n';
+	
+	std::vector<int> vec = { 3, 8, 9, 7, 6 };
+	for (auto val : codility::CyclicRotation::PerformCyclicRotation(vec, 3))
+	{
+		wcout << val;
+	}
+	wcout << '\n';
 
 	// Wait for input and ignore.
 	cin.ignore();

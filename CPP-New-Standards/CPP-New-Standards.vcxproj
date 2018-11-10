@@ -119,11 +119,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CodilityBinatyGap.cpp" />
+    <ClCompile Include="CodilityCyclicRotation.cpp" />
     <ClCompile Include="Lambda.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ParseArgs.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Codility.h" />
     <ClInclude Include="Lambda.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="ParseArgs.h" />
