@@ -28,6 +28,13 @@ namespace codility
 
 	}
 
+	namespace OddOccurrences
+	{
+
+		int FindUnpairedElement(std::vector<int>& vec);
+
+	}
+
 }
 
 #endif	// !CODILITY_H
