@@ -18,6 +18,7 @@ namespace codility
 			for (auto val : vec)
 			{
 
+				// Note: Use of Structured binding declaration []
 				auto[itr, inserted] = result.insert(std::pair<int, int>(val, val));
 				if (!inserted)
 				{

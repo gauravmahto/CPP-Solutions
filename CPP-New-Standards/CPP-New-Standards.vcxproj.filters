@@ -30,7 +30,13 @@
     <ClCompile Include="CodilityCyclicRotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OddOccurrences.cpp">
+    <ClCompile Include="CodilityTimeComplexity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodilityOddOccurrences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodilityCountingElements.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -121,10 +121,12 @@
   <ItemGroup>
     <ClCompile Include="CodilityBinatyGap.cpp" />
     <ClCompile Include="CodilityCyclicRotation.cpp" />
+    <ClCompile Include="CodilityCountingElements.cpp" />
     <ClCompile Include="Lambda.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="OddOccurrences.cpp" />
+    <ClCompile Include="CodilityOddOccurrences.cpp" />
     <ClCompile Include="ParseArgs.cpp" />
+    <ClCompile Include="CodilityTimeComplexity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Codility.h" />
