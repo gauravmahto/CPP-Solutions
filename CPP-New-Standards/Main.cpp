@@ -64,6 +64,21 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[])
 		wcout << val << ',';
 	}
 	wcout << '\n';
+	std::vector<int> vecWithMissingInteger{ 1, 3, 6, 4, 1, 2 };
+	wcout << "CountingElements - Smallest missing integer = " << codility::CountingElements::FindSmallestMissingInteger(vecWithMissingInteger) << '\n';
+
+	std::vector<int> vecCarsTravelingDir{ 0, 1, 0, 1, 1 };
+	wcout << "PrefixSums - Number of passing cars = " << codility::PrefixSums::FindPassingCars(vecCarsTravelingDir) << '\n';
+	std::wstring dnaSeq = L"CAGCCTA";
+	std::vector<int> dnaStartPOS{ 2, 5, 0 };
+	std::vector<int> dnaEndPOS{ 4, 5, 6 };
+	std::vector dnaImpactVec = codility::PrefixSums::FindDNAMinimumImpact(dnaSeq, dnaStartPOS, dnaEndPOS);
+	wcout << "PrefixSums - DNA minimum impact data = ";
+	for (const auto val : dnaImpactVec)
+	{
+		wcout << val << ',';
+	}
+	wcout << '\n';
 
 	// Wait for input and ignore.
 	cin.ignore();

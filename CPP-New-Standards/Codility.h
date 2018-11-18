@@ -55,6 +55,17 @@ namespace codility
 
 		std::vector<int> FindFinalCounterValues(int counterSize, std::vector<int>& vec);
 
+		int FindSmallestMissingInteger(std::vector<int>& vec);
+
+	}
+
+	namespace PrefixSums
+	{
+
+		int FindPassingCars(std::vector<int>& vec);
+
+		std::vector<int> FindDNAMinimumImpact(std::wstring& str, std::vector<int>& seqPOSStart, std::vector<int>& seqPOSEnd);
+
 	}
 
 }

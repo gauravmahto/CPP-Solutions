@@ -128,6 +128,28 @@ namespace codility
 
 		}
 
+		int FindSmallestMissingInteger(std::vector<int>& vec)
+		{
+
+			long smallestMissingNumber = 1;
+			std::sort(vec.begin(), vec.end());
+
+			for (const auto val : vec)
+			{
+				if (smallestMissingNumber == val)
+				{
+					++smallestMissingNumber;
+				}
+				else if (smallestMissingNumber < val)
+				{
+					break;
+				}
+			}
+
+			return smallestMissingNumber;
+
+		}
+
 	}
 
 }
