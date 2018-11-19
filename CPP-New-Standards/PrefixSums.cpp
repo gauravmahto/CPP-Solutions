@@ -48,11 +48,15 @@ namespace codility
 
 		}
 
-		std::vector<int> FindDNAMinimumImpact(std::wstring& str, std::vector<int>& seqPOSStart, std::vector<int>& seqPOSEnd)
+		std::vector<int> FindDNAMinimumImpact(std::wstring& /*str*/, std::vector<int>& /*seqPOSStart*/, std::vector<int>& seqPOSEnd)
 		{
+
+			std::wcout << L"TODO - Implement - FindDNAMinimumImpact()";
+
+			return seqPOSEnd;
 
 		}
 
-	}
+	}	// namespace PrefixSums
 
-}
+}	// namespace codility

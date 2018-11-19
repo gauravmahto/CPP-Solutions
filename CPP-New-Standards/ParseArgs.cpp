@@ -17,7 +17,7 @@ ParseArgs::ParseArgs(const ParseArgs&&)
 	cout << "Move constructor" << endl;
 }
 
-ParseArgs::ParseArgs(const initializer_list<ParseArgs>& parseArgsObj)
+ParseArgs::ParseArgs(const initializer_list<ParseArgs>& /*parseArgsObj*/)
 {
 	cout << R"(Initializer list constructor)" << endl;
 }

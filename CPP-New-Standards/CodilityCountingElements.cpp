@@ -15,7 +15,7 @@ namespace codility
 
 			size_t vecSize = vec.size();
 			std::set<long> uniqueNumbers;
-			long validTotalSum = long((1 + vecSize) * ((double)vecSize / 2));
+			long validTotalSum = static_cast<long>((1 + vecSize) * (static_cast<double>(vecSize) / 2));
 			long totalSum = 0;
 
 			for (const auto val : vec)
@@ -38,12 +38,12 @@ namespace codility
 		{
 
 			int earliestTime = -1;
-			long sumOfFinalPositions = (long)((1 + destPOS) * ((double)destPOS / 2));
-			long locatedLeafPosSum = 0;
+			long sumOfFinalPositions = static_cast<long>((1 + destPOS) * (static_cast<double>(destPOS) / 2));
 			std::set<int> uniquePositions;
 
 			{
 
+				long locatedLeafPosSum = 0;
 				int second = 0;
 
 				for (auto itr = vec.begin(); itr != vec.end(); ++itr, ++second)
@@ -63,7 +63,7 @@ namespace codility
 
 						earliestTime = second;
 
-						break;
+						return earliestTime;
 
 					}
 					else if (locatedLeafPosSum > sumOfFinalPositions)
@@ -150,6 +150,6 @@ namespace codility
 
 		}
 
-	}
+	}	// namespace CountingElements
 
-}
+}	// namespace codility

@@ -27,7 +27,7 @@ namespace startcpp
 		return { ToStringImpl(param)... };
 	}
 
-}
+}	// namespace startcpp
 
 #endif // !VARIADICTEMPL_H
 

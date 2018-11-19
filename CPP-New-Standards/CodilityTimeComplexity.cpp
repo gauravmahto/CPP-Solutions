@@ -16,23 +16,20 @@ namespace codility
 			size_t maxNum = (vec.size() + 1);
 
 			unsigned long vecSum = 0;
-			double sum = (1 + maxNum) * ((double)maxNum / 2);
+			double sum = (1 + maxNum) * (static_cast<double>(maxNum) / 2);
 
-			for (const auto val : vec)
-			{
-				vecSum += val;
-			}
+			vecSum = std::accumulate(vec.begin(), vec.end(), 0);
 
-			return (unsigned long)(sum - vecSum);
+			return static_cast<unsigned long>(sum - vecSum);
 
 		}
 
 		int FindJumpCount(int startPOS, int endPOS, int minStep)
 		{
 
-			double totalDistToCover = (double)(endPOS - startPOS);
+			auto totalDistToCover = static_cast<double>(endPOS - startPOS);
 
-			return (long)ceil(totalDistToCover / (double)minStep);
+			return static_cast<long>(ceil(totalDistToCover / static_cast<double>(minStep)));
 
 		}
 
@@ -78,6 +75,6 @@ namespace codility
 
 		}
 
-	}
+	}	// namespace TimeComplexity
 
-}
+}	// namespace codility

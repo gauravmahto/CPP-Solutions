@@ -49,6 +49,6 @@ namespace codility
 
 		}
 
-	}
+	}	// namespace CyclicRotation
 
-}
+}	// namespace codility

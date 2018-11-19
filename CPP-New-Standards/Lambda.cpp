@@ -23,6 +23,8 @@ void Experiments::TestLambda()
 	};
 
 	int b = t(10);
+
+	cout << "Lambda result = " << b << '\n';
 }
 
 void Experiments::TestTypeDec()
@@ -31,4 +33,6 @@ void Experiments::TestTypeDec()
 	typedef decltype (typeInt) TypeInt;
 
 	TypeInt b = 10;
+
+	cout << "Declared type value = " << b << '\n';
 }

@@ -19,21 +19,21 @@ namespace codility
 
 		int GetBinaryGap(int num);
 
-	}
+	}	// namespace BinaryGap
 
 	namespace CyclicRotation
 	{
 
 		std::vector<int> PerformCyclicRotation(std::vector<int>& vec, int times);
 
-	}
+	}	// namespace CyclicRotation
 
 	namespace OddOccurrences
 	{
 
 		int FindUnpairedElement(std::vector<int>& vec);
 
-	}
+	}	// namespace OddOccurrences
 
 	namespace TimeComplexity
 	{
@@ -44,7 +44,7 @@ namespace codility
 
 		int FindMinDifference(std::vector<int>& vec);
 
-	}
+	}	// namespace TimeComplexity
 
 	namespace CountingElements
 	{
@@ -57,7 +57,7 @@ namespace codility
 
 		int FindSmallestMissingInteger(std::vector<int>& vec);
 
-	}
+	}	// namespace CountingElements
 
 	namespace PrefixSums
 	{
@@ -66,8 +66,8 @@ namespace codility
 
 		std::vector<int> FindDNAMinimumImpact(std::wstring& str, std::vector<int>& seqPOSStart, std::vector<int>& seqPOSEnd);
 
-	}
+	}	// namespace PrefixSums
 
-}
+}	// namespace codility
 
 #endif	// !CODILITY_H

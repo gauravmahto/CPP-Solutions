@@ -11,9 +11,10 @@
 #include <cmath>
 #include <iostream>
 #include <map>
+#include <numeric>
 #include <set>
 #include <sstream>
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 #include <variant>
 #include <vector>

@@ -54,6 +54,6 @@ namespace codility
 
 		}
 
-	}
+	}	// namespace OddOccurrences
 
-}
+}	// namespace codility

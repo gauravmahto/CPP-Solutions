@@ -60,4 +60,4 @@ namespace codility
 
 	}
 
-}
+}	// namespace codility

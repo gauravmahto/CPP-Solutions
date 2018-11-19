@@ -14,6 +14,7 @@ namespace startcpp
 
 	class ParseArgs
 	{
+
 	public:
 		ParseArgs(int, wchar_t*[], std::wstring prefix = L"--");
 
@@ -21,20 +22,21 @@ namespace startcpp
 		ParseArgs(const ParseArgs&);
 
 		// Move constructor.
-		ParseArgs(const ParseArgs&&);
+		explicit ParseArgs(const ParseArgs&&);
 
 		// Initializer list.
-		ParseArgs(const std::initializer_list<ParseArgs>&);
+		explicit ParseArgs(const std::initializer_list<ParseArgs>&);
 
 		bool HasArgument(std::wstring, std::map<std::wstring, std::wstring>::const_iterator) const;
 
 		std::map<std::wstring, std::wstring> GetParsedArguments() const;
 
 	private:
-		std::map<std::wstring, std::wstring> parsed_key_val_args_;
+		std::map<std::wstring, std::wstring> parsed_key_val_args_{};
 
-		std::vector<std::wstring> original_args;
+		std::vector<std::wstring> original_args{};
 	};
-}
+
+}	// namespace startcpp
 
 #endif
