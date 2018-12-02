@@ -41,8 +41,11 @@ namespace codility
 				{
 					--itr;
 				}
+
+				continue;
 			}
-			else if (0 == *itr && 1 == start)
+
+			if (0 == *itr && 1 == start)
 			{
 				currentBinGap++;
 			}

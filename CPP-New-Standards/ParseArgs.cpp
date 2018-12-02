@@ -28,7 +28,7 @@ ParseArgs::ParseArgs(int argc, wchar_t* argv[], wstring prefix /* = L"--" */)
 	{
 		for (int index = 1; index < argc; ++index)
 		{
-			original_args.push_back(argv[index]);
+			original_args.emplace_back(argv[index]);
 
 			const wchar_t* const arg = argv[index];
 			wstring w_arg{ arg };

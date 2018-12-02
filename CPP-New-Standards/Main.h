@@ -7,6 +7,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include "gsl/gsl"
+
 #include <algorithm>
 #include <cmath>
 #include <iostream>

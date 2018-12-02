@@ -66,7 +66,8 @@ namespace codility
 						return earliestTime;
 
 					}
-					else if (locatedLeafPosSum > sumOfFinalPositions)
+
+					if (locatedLeafPosSum > sumOfFinalPositions)
 					{
 
 						break;

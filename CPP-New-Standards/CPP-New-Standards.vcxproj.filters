@@ -24,9 +24,6 @@
     <ClCompile Include="ParseArgs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CodilityBinatyGap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CodilityCyclicRotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PrefixSums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CodilityBinaryGap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
